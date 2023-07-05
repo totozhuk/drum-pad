@@ -2,7 +2,7 @@ class DrumButton extends React.Component{
   constructor(props){
     super(props);
 
-    this.handleKeyPress = this.handleKeyPress.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this); //hgfhgf
 
   }
 
