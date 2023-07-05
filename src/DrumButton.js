@@ -1,8 +1,14 @@
+import React from 'https://esm.sh/react@18.2.0'
+import './App.css';
+
+
 class DrumButton extends React.Component{
   constructor(props){
     super(props);
 
-    this.handleKeyPress = this.handleKeyPress.bind(this); //hgfhgf
+    this.handleKeyPress = this.handleKeyPress.bind(this);
+    this.playAudio = this.playAudio.bind(this);
+
 
   }
 
@@ -29,7 +35,7 @@ class DrumButton extends React.Component{
   render() {
     return (
       <div>
-       <button name={this.props.name} onClick={() => this.playAudio(event)} className = "drum-pad" id = {this.props.id}>
+       <button name={this.props.name} onClick={this.playAudio} className = "drum-pad" id = {this.props.id}>
          <audio className="clip" id={this.props.name} src={this.props.src}></audio>
           {this.props.name}
        </button>
@@ -37,3 +43,5 @@ class DrumButton extends React.Component{
     );
   }
 }
+
+export default DrumButton;
