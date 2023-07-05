@@ -1,5 +1,5 @@
 body {
-  background-color: light blue;
+  background-color: lightblue;
   margin: 50px;
 }
 button{
@@ -15,7 +15,7 @@ button{
   width: 50%;
   border: 5px solid #73AD21;
   padding: 20px;
-  background-color: light grey;
+  background-color: lightgrey;
 }
 p{
   text-align: center;
